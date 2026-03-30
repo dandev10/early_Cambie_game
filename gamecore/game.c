@@ -2,7 +2,7 @@
 #include "mainmenu.h"
 
 int checkStr(char* str1, char* str2) {
-    if (strcmp(str1, str2)) {
+    if (strcmp(str1, str2) == 0) {
         return 1;
     }
     else {
@@ -17,11 +17,10 @@ void game(char yn[2]) {
     
     //game
     while(gameloop) {
-
+        printf("North:%d, West:%d\n", locate.cordsN, locate.cordsW);
         printf("%s: ", demoplayer.playersname);
         fgets(demoplayer.choose, 20, stdin);
         demoplayer.choose[strlen(demoplayer.choose)-1] = '\0';
-
 
         /***************************************************/
         /*****************game commands*********************/
@@ -39,7 +38,7 @@ void game(char yn[2]) {
             printf("list of commands:\n");
             printf("1. /help. -> gives you list of commands\n");
             printf("2. /quit  -> ends game completely\n");
-            printf("4. /menu  -> returns to menu");
+            printf("4. /menu  -> returns to menu(Warning! progress will not be saved)");
             printf("3. /stats -> gives the players stats\n");
         }
 
@@ -64,12 +63,29 @@ void game(char yn[2]) {
             demoplayer.xp-=5;
             printf("You lost XP!\n");
         }
-        /* * * * * * * * * * END OF MAIN GAME * * * * * * * * * */
 
-        else {
-            printf("not a vaild action\n");
+        // player moves////////////////////////////////
+        else if (checkStr(demoplayer.choose, "n")) {
+            locate.cordsN += 10;
+            printf("you went north\n");
         }
+        else if (checkStr(demoplayer.choose, "s")) {
+            locate.cordsN -= 10;
+            printf("you went south\n");
 
+        }
+        else if (checkStr(demoplayer.choose, "w")) {
+            locate.cordsW += 10;
+            printf("you went west\n");
+        }
+        else if (checkStr(demoplayer.choose, "e")) {
+            locate.cordsW -= 10;
+            printf("you went east\n");
+
+        }
+        ////////////////////////////////
+    
+        /* * * * * * * * * * END OF MAIN GAME * * * * * * * * * */
 
     } /*end of the gameloop*/
 
