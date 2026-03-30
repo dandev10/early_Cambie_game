@@ -1,1 +1,0 @@
-//char TEXTRONE[40] = "Ty attakaval igroka";

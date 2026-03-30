@@ -15,6 +15,10 @@ void mainmenu(char yn[2]) {
         else if (strcmp(menuplayer.choose, "quit") == 0) {
             menuloop = 0;
         }
+
+        else if (strcmp(menuplayer.choose, "info") == 0) {
+            printf("ver");
+        }
     }
 
 }
