@@ -11,12 +11,11 @@
 
 int main() {
 
-
     //beginning of the game
     printf("********************************\n");
     printf("Welcome to the Neon Game!\n");
     printf("********************************\n");
-    printf("version 0.6\nwrite /help if stuck\n\n");
+    printf("version 0.61\nwrite /help if stuck\n\n");
     
     sleep(1);
     printf("whats the players name: ");
@@ -29,4 +28,5 @@ int main() {
 
     return 0;
 }
+
 

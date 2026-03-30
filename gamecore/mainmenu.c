@@ -1,7 +1,19 @@
 #include "mainmenu.h"
 #include "game.h"
 
+// info about the game
+#define print printf
+void info() {
+    float version = 0.61;
+    print("Version: %.2f\n", version);
+    print("Creator: dandev10\n");
+    print("editon: Standard(draft)\n");
+    print("Additonal help: Nikeedev\n");
+    print("\n");
+}
+
 void mainmenu(char yn[2]) {
+
     menuloop = 1;
     while(menuloop) {
         printf("menu:");
@@ -17,7 +29,7 @@ void mainmenu(char yn[2]) {
         }
 
         else if (strcmp(menuplayer.choose, "info") == 0) {
-            printf("ver");
+            info();
         }
     }
 

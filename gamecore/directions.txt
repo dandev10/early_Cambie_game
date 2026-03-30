@@ -5,6 +5,7 @@ main.c has welcoming and it starts mainmenu which is in mainmenu.c
 mainmenu.h has nothing, it just has function prototype
 
 mainmenu.c is where the mainmenu is located and where loop for main menu exists
+in the same file exists info function. ITS IMPORTANT TO CHANGE IT IF SOME CHANGES COME
 
 game.h has prototype function for the main game
 
