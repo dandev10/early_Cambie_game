@@ -1,6 +1,6 @@
-# Neon game
+# Cambie game
 
-This is the first neon game
+This is the first cambie game
 
 ## how to run
 1. 

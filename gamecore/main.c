@@ -6,14 +6,13 @@
 
 // files from the "game" file
 #include "../game/players/mainplayer.h"
-#include "../game/players/zombie.h"
 
 
 int main() {
 
     //beginning of the game
     printf("********************************\n");
-    printf("Welcome to the Neon Game!\n");
+    printf("Welcome to the Cambie Game!\n");
     printf("********************************\n");
     printf("version 0.61\nwrite /help if stuck\n\n");
     

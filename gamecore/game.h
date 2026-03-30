@@ -1,4 +1,5 @@
 #include "../game/players/mainplayer.h"
+#include "../game/world/place.h"
 
 
 int gameloop;

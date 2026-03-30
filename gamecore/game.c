@@ -1,20 +1,22 @@
 #include "game.h"
 #include "mainmenu.h"
 
-#define print printf
 
 void game(char yn[2]) {
     gameloop = 1;
     mainplayerfunc();
-
+    landkingdomf();
+    
     //game
     while(gameloop) {
 
-        print("%s: ", demoplayer.playersname);
+        printf("%s: ", demoplayer.playersname);
         fgets(demoplayer.choose, 20, stdin);
         demoplayer.choose[strlen(demoplayer.choose)-1] = '\0';
 
-        /*game commands*/
+
+        /***************************************************/
+        /*****************game commands*********************/
         // ends game
         if (strcmp(demoplayer.choose, "/quit") == 0) {
             gameloop = 0;
@@ -26,25 +28,29 @@ void game(char yn[2]) {
 
         // help
         else if (strcmp(demoplayer.choose, "/help") == 0) {
-            print("list of commands:\n");
-            print("1. /help. -> gives you list of commands\n");
-            print("2. /quit  -> ends game completely\n");
-            print("3. /stats -> gives the players stats\n");
+            printf("list of commands:\n");
+            printf("1. /help. -> gives you list of commands\n");
+            printf("2. /quit  -> ends game completely\n");
+            printf("4. /menu  -> returns to menu");
+            printf("3. /stats -> gives the players stats\n");
         }
 
         // players stats
         else if (strcmp(demoplayer.choose, "/stats") == 0) {
-            print("\nHealth = %d\n", demoplayer.hearts);
+            printf("\nHealth = %d\n", demoplayer.hearts);
         }
-        /*end of game commands*/
+        /***************end of game commands**********************/
+        /*********************************************************/
 
-        else if (strcmp(demoplayer.choose, "attack") == 0) {
-            print("you have attacked -\n");
+        /* * * * * * * * * * * * * IN GAME* * * * * * * * * * * */
+
+        else if (strcmp(demoplayer.choose, "place") == 0) {
+            printf("%s, %s\n", landkingdom.name, greatcity.name);
         }
-
+        /* * * * * * * * * * END OF MAIN GAME * * * * * * * * * */
 
         else {
-            print("not a vaild action\n");
+            printf("not a vaild action\n");
         }
 
 

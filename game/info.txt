@@ -1,1 +1,3 @@
-here you can change and modify the game
+in this folder you are able to change 
+the game and custumize how you want
+you'll need to have a bit C knowledge.
