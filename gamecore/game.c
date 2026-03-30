@@ -5,7 +5,9 @@
 
 void game(char yn[2]) {
     gameloop = 1;
-//game
+    mainplayerfunc();
+
+    //game
     while(gameloop) {
 
         print("%s: ", demoplayer.playersname);

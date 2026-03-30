@@ -12,11 +12,6 @@
 int main() {
 
 
-
-    // Beginning stats here, because of this stupid shit
-    demoplayer.hearts = 10;
-
-
     //beginning of the game
     printf("********************************\n");
     printf("Welcome to the Neon Game!\n");

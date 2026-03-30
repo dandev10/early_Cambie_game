@@ -1,3 +1,5 @@
+// if you want change any stats of player go to mainplayer.c
+
 #pragma once
 
 #include <stdio.h>
@@ -10,4 +12,8 @@ struct player
     char playersname[50];
     int hearts;
 };
+
+struct player demoplayer;
+
+void mainplayerfunc();
 

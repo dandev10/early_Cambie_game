@@ -1,0 +1,15 @@
+this text is for developers that are confused
+
+main.c has welcoming and it starts mainmenu which is in mainmenu.c 
+
+mainmenu.h has nothing, it just has function prototype
+
+mainmenu.c is where the mainmenu is located and where loop for main menu exists
+
+game.h has prototype function for the main game
+
+game.c has the main game function and the loop for it
+
+game/players/mainplayer.h has the struct for the players
+
+game/players/mainplayer.c has the function that holds value of players
