@@ -1,6 +1,7 @@
 # Cambie game
 
-This is the first cambie game
+This is the first cambie game  
+IMPORTANT: this game would no longer update. sorry
 
 ## how to run
 1. 
